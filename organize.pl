@@ -3,6 +3,8 @@ use strict;
 use warnings;
 use IO::Handle;
 use Term::ANSIColor;
+use FindBin;
+use lib $FindBin::Bin;
 
 my $filename = "models/testing/bjt.txt";
 open(my $fh, "<:encoding(UTF-8)", $filename)
@@ -15,4 +17,3 @@ while (my $line = <$fh>) {
 		print "[" . colored("IGNORE", "red") . "] Line " . $fh->input_line_number() . ": " . $line;
 	}
 }
-

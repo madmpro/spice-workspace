@@ -1,0 +1,8 @@
+# Logs and garbage.
+*.log
+
+# Sensitive files.
+config.pl
+
+# Misc.
+.DS_Store
