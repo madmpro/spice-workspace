@@ -26,6 +26,8 @@ sub ignore_model {
 	print "[" . colored("IGNORE", "red") . "] Line " . $file->input_line_number() . ": $line\n";
 }
 
+
+# Testing grounds.
 my $filename = "models/testing/bjt.txt";
 open(my $fh, "<:encoding(UTF-8)", $filename)
 	or die "Could not open file '$filename': $!";
@@ -35,7 +37,14 @@ while (my $line = <$fh>) {
 
 	if ($line =~ m/^\.model/i) {
 		if (is_valid $line) {
-			print "[" . colored("ADD", "green") . "] $line\n";
+			my ($mpn, $type) = (split(/\s/, $line))[1, 2];
+			
+			# Standardizing and cleaning our main variables.
+			$type =~ s/\(.*//;
+			$type = lc($type);
+			$mpn = uc($mpn);
+
+			print "[" . colored("ADD", "green") . "] $type - $mpn\n";
 		} else {
 			ignore_model($fh, $line);
 		}
