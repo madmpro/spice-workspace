@@ -71,7 +71,15 @@ while (my $line = <$fh>) {
 			}
 
 			# Create the model file.
-			print "[" . colored("ADD", "green") . "] $type - $mpn\n";
+			open(my $model_fh, ">", "$loc/$model_file")
+				or die "[" . colored("ERROR", "red") . "] Could not open file '$loc/$model_file': $!\n";
+
+			print $model_fh "* $mpn\n";
+			print $model_fh "* $family/$type/$model_file\n\n";
+			print $model_fh "$line\n";
+
+			close $model_fh;
+			print "[" . colored("CREATED", "green") . "] $mpn model under $family/$type\n";
 		} else {
 			ignore_model($fh, $line);
 		}
