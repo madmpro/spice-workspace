@@ -77,6 +77,17 @@ while (my $line = <$fh>) {
 			$type = lc($type);
 			$mpn =~ s/\//-/g;
 			$mpn = uc($mpn);
+
+			# Special type only for diodes.
+			if ($type eq "d") {
+				if ($line =~ m/type\=([A-Za-z0-9]*)/i) {
+					$type = lc($1);
+				} else {
+					$type = "undefined";
+				}
+			}
+
+			# Generate the locations.
 			my $loc = "$models_dir/$family/$type";
 			my $model_file = lc("$mpn.mod");
 
