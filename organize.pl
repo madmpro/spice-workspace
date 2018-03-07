@@ -75,6 +75,7 @@ while (my $line = <$fh>) {
 			# Standardizing and cleaning our main variables.
 			$type =~ s/\(.*//;
 			$type = lc($type);
+			$mpn =~ s/\//-/g;
 			$mpn = uc($mpn);
 			my $loc = "$models_dir/$family/$type";
 			my $model_file = lc("$mpn.mod");
