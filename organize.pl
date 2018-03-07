@@ -8,9 +8,18 @@ use FindBin;
 my $ignore_log = 1;  # Enable logging ignored lines.
 my $models_dir = "$FindBin::Bin/models/testing";  # Location of the model library.
 
-# TODO: Read these from the command line arguments.
-my $library_file = "models/testing/bjt.txt";
-my $family = "bjt";
+# Check the command-line arguments.
+if (scalar(@ARGV) != 2) {
+	print colored("Usage: $0 family library\n\n", "bold");
+	print "This script grabs a SPICE model library file and splits it into multiple model files to make your SPICE workspace a lot more organized.\n\n";
+
+	print "  family\tDevice family (example: bjt, mosfet, diode)\n";
+	print "  library\tModel library downloaded from the internet\n";
+	exit 0;
+}
+
+my ($family, $library_file) = @ARGV;
+$family = lc($family);
 
 # Checks if a model is valid or is just a glorified comment or a reference to another model.
 sub is_valid {
