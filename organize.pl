@@ -6,7 +6,7 @@ use Term::ANSIColor;
 use FindBin;
 
 my $ignore_log = 1;  # Enable logging ignored lines.
-my $models_dir = "$FindBin::Bin/models/testing";  # Location of the model library.
+my $models_dir = "$FindBin::Bin/models";  # Location of the model library.
 
 # Check the command-line arguments.
 if (scalar(@ARGV) != 2) {
