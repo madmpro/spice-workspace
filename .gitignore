@@ -1,4 +1,5 @@
 # Logs and garbage.
+models/testing/
 *.log
 
 # Sensitive files.
