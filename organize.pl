@@ -8,6 +8,10 @@ use FindBin;
 my $ignore_log = 1;  # Enable logging ignored lines.
 my $models_dir = "$FindBin::Bin/models/testing";  # Location of the model library.
 
+# TODO: Read these from the command line arguments.
+my $library_file = "models/testing/bjt.txt";
+my $family = "bjt";
+
 # Checks if a model is valid or is just a glorified comment or a reference to another model.
 sub is_valid {
 	my ($line) = @_;
@@ -28,15 +32,19 @@ sub ignore_model {
 	my ($file, $line) = @_;
 
 	print "[" . colored("IGNORE", "red") . "] Line " . $file->input_line_number() . ": $line\n";
+
+	if ($ignore_log) {
+		open(my $log_fh, ">>:encoding(UTF-8)", "$models_dir/ignored.log")
+			or die "[" . colored("ERROR", "red") . "] Could not open file '$models_dir/ignored.log': $!\n";
+
+		print $log_fh "$library_file:" . $file->input_line_number() . ": $line\n";
+	}
 }
 
 
 # Testing grounds.
-my $filename = "models/testing/bjt.txt";
-my $family = "bjt";
-
-open(my $fh, "<:encoding(UTF-8)", $filename)
-	or die "[" . colored("ERROR", "red") . "] Could not open file '$filename': $!\n";
+open(my $fh, "<:encoding(UTF-8)", $library_file)
+	or die "[" . colored("ERROR", "red") . "] Could not open file '$library_file': $!\n";
 
 # Check if the family directory exists.
 if (!-d "$models_dir/$family") {
@@ -47,6 +55,7 @@ if (!-d "$models_dir/$family") {
 	print "[" . colored("MKDIR", "bright_yellow") . "] New family " . uc($family) . ": $models_dir/$family created.\n";
 }
 
+# Read the model library, create model files and populate them.
 while (my $line = <$fh>) {
 	chomp $line;
 
@@ -71,19 +80,23 @@ while (my $line = <$fh>) {
 			}
 
 			# Create the model file.
-			open(my $model_fh, ">", "$loc/$model_file")
+			open(my $model_fh, ">:encoding(UTF-8)", "$loc/$model_file")
 				or die "[" . colored("ERROR", "red") . "] Could not open file '$loc/$model_file': $!\n";
 
+			# Populate the model file.
 			print $model_fh "* $mpn\n";
 			print $model_fh "* $family/$type/$model_file\n\n";
 			print $model_fh "$line\n";
 
+			# Close and call it a success.
 			close $model_fh;
 			print "[" . colored("CREATED", "green") . "] $mpn model under $family/$type\n";
 		} else {
+			# Invalid model.
 			ignore_model($fh, $line);
 		}
 	} else {
+		# Random, non-model line.
 		ignore_model($fh, $line);
 	}
 }
