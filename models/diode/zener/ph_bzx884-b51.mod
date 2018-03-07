@@ -1,0 +1,4 @@
+* PH_BZX884-B51
+* diode/zener/ph_bzx884-b51.mod
+
+.MODEL PH_BZX884-B51 D ( IS=5.229E-15 N=1.061 BV=51 IBV=0.002 RS=0.4467 CJO=1.602E-11 VJ=0.8454 M=0.4154 FC=0.5 mfg=Philips type=zener )

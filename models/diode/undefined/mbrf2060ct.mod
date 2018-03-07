@@ -1,0 +1,4 @@
+* MBRF2060CT
+* diode/undefined/mbrf2060ct.mod
+
+.MODEL mbrf2060ct d IS=1e-15 RS=0.0238648 N=0.510622 EG=0.947814 XTI=0.5 BV=60 IBV=0.00015 CJO=1e-11 VJ=0.7 M=0.5 FC=0.5

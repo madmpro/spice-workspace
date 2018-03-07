@@ -1,0 +1,4 @@
+* BZX84C2V7
+* diode/zener/bzx84c2v7.mod
+
+.MODEL BZX84C2V7 D(IS=3.677E-15 N=1.059 RS=.12 IKF=1 XTI=3 EG=1.11 CJO=312.1E-12 M=.2052 VJ=.3971 FC=.5 BV=2.766 IBV=64.76E-3 TBV1=-.56E-3 TT=57.71E-9 Vpk=2.7 mfg=Philips type=zener)

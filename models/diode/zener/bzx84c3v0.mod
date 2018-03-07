@@ -1,0 +1,4 @@
+* BZX84C3V0
+* diode/zener/bzx84c3v0.mod
+
+.MODEL BZX84C3V0 D(IS=4.311E-15 N=1.057 RS=.12 IKF=1 XTI=3 EG=1.11 CJO=291.5E-12 M=.2719 VJ=.5248 FC=.5 BV=3.066 IBV=64.76E-3 TBV1=-.5E-3 TT=64.92E-9 Vpk=3 mfg=Philips type=zener)

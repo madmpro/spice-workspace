@@ -1,0 +1,4 @@
+* PH_BZX884-B12
+* diode/zener/ph_bzx884-b12.mod
+
+.MODEL PH_BZX884-B12 D ( IS=5.229E-15 N=1.061 BV=12 IBV=0.005 RS=0.4467 CJO=4.928E-11 VJ=0.575 M=0.3292 FC=0.5 mfg=Philips type=zener )

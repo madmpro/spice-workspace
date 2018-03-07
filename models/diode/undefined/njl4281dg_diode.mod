@@ -1,0 +1,4 @@
+* NJL4281DG_DIODE
+* diode/undefined/njl4281dg_diode.mod
+
+.MODEL njl4281dg_diode d IS=3.44393e-08 RS=0.179036 N=2 EG=1.3 XTI=2.33354 BV=400 IBV=1e-05 CJO=2.08272e-11 VJ=1.5 M=0.653713 FC=0.5 TT=5.1937e-08

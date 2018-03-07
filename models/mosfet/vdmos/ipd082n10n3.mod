@@ -1,0 +1,4 @@
+* IPD082N10N3
+* mosfet/vdmos/ipd082n10n3.mod
+
+.model IPD082N10N3 VDMOS(Rg=1.9 Vto=3.63 Rd=4.82m Rs=932u Rb=1.79m Kp=126.1 Lambda=0.03 Cgdmin=15p Cgdmax=0.78n A=0.2 Cgs=2.97n Cjo=2.35n M=0.3 Is=139.3p VJ=0.9 N=1.19 TT=60n mfg=Infineon Vds=100 Ron=8.2m Qg=42n)

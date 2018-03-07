@@ -1,0 +1,4 @@
+* 2N5196_
+* jfet/njf/2n5196_.mod
+
+.Model 2N5196_ NJF(VTO=-2.1 BETA=850u LAMBDA=5m RD=0.9 RS=0.9 CGS=1.6p CGD=3.5p PB=1 IS=35.0f FC=.5 KF=3.4E-18 AF=1)

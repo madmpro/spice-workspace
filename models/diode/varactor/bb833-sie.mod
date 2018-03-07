@@ -1,0 +1,4 @@
+* BB833-SIE
+* diode/varactor/bb833-sie.mod
+
+.MODEL BB833/SIE D (IS=42.156E-15 N=1.1718 RS=.10785 XTI=3 EG=1.11 CJO=29.033E-12 M=0.90022 VJ=.39089 FC=.5 BV=32 IBV=5E-6 TT=120E-9 type=varactor)

@@ -1,0 +1,4 @@
+* KP505G
+* mosfet/vdmos/kp505g.mod
+
+.MODEL kp505g VDMOS(KP=2.5 RS=0.0022 RD=0.0001 RG=100 Rds=8Meg VTO=0.6 LAMBDA=0.1 CGDMAX=466p CGDMIN=39p CGS=150p TT=720n a=2.59 is=100p n=1.1 Rb=0.12 m=0.437 Vj=0.62 Cjo=160pF mfg=USSR Vds=8 Ron=1)

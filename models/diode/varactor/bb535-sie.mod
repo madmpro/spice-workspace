@@ -1,0 +1,4 @@
+* BB535-SIE
+* diode/varactor/bb535-sie.mod
+
+.MODEL BB535/SIE D(IS=1.75E-15 N=1.043 RS=60E-3 XTI=3 EG=1.11 CJO=25.31E-12 M=1.064 VJ=3.022 FC=.5 BV=32 IBV=100E-9 TT=120E-9 type=varactor)

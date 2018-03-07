@@ -1,0 +1,45 @@
+misc/ltspice/standard.bjt:1: 
+misc/ltspice/standard.bjt:2: * Copyright (c) 2000-2012 Linear Technology Corporation.   All rights reserved.
+misc/ltspice/standard.bjt:3: *
+misc/ltspice/standard.bjt:4: 
+misc/ltspice/standard.bjt:155: .model mp26a ako: mp25a pnp mfg=GERMANIUM_USSR
+misc/ltspice/standard.bjt:196: .model 2SC5200 ako:2SC3281 NPN( Vceo=200V ICrating=15A mfg=Toshiba)
+misc/ltspice/standard.bjt:198: .model FZT690B ako: FCX690B NPN( Vceo=45 Icrating=3 mfg=Zetex)
+misc/ltspice/standard.bjt:199: .model ZTX690B ako: FCX690B NPN( Vceo=45 Icrating=2 mfg=Zetex)
+misc/ltspice/standard.bjt:201: .model FZT790A ako: FCX790A pnp( Vceo=45 Icrating=3 mfg=Zetex)
+misc/ltspice/standard.bjt:203: .MODEL ZTX869 ako: FZT869 NPN Vceo=25 Icrating=5 mfg=Zetex
+misc/ltspice/standard.bjt:219: .model FJP5027 ako: KSC5027 NPN Vceo=800 Icrating=10 mfg=fairchild
+misc/ltspice/standard.bjt:220: .model FJPF5027 ako: KSC5027 NPN Vceo=800 Icrating=10 mfg=fairchild
+misc/ltspice/standard.bjt:234: .model PZT3906 ako: 2N3906 PNP Vceo=40 Icrating=200m mfg=Philips
+misc/ltspice/standard.bjt:236: .model ZTX849 ako:FZT849 NPN(Vceo=30 Icrating=7 mfg=Zetex)
+misc/ltspice/standard.bjt:263: .model EndOfStdLib NPN mfg=StartOfCopirateNpnBjt
+misc/ltspice/standard.bjt:264: .model EndOfStd_Lib PNP mfg=StartOfCopiratePnpBjt
+misc/ltspice/standard.bjt:278: .model PH_BC557C ako: BC557B PNP Vceo=45 Icrating=100m mfg=Philips
+misc/ltspice/standard.bjt:368: .model PH_BC547C ako: BC547C NPN Vceo=45 Icrating=100m mfg=Philips
+misc/ltspice/standard.bjt:519: .model EndOfCopirate NPN mfg=StartOfPsPiceEuroNpnBjt
+misc/ltspice/standard.bjt:520: .model EndOf_Copirate PNP mfg=StartOfPsPiceEuroPnpBjt
+misc/ltspice/standard.bjt:669: .model EndOfEbipolar NPN mfg=StartOfPsPiceEuroPwrNpn
+misc/ltspice/standard.bjt:670: .model EndOf_Ebipolar PNP mfg=StartOfPsPiceEuroPwrPnp
+misc/ltspice/standard.bjt:705: .model EndOfEPpwrBjt NPN mfg=StartOfMiscNpnBjt
+misc/ltspice/standard.bjt:706: .model EndOfEPpwBjt PNP mfg=StartOfMiscPnpBjt
+misc/ltspice/standard.bjt:750: .model Q2SC1815 ako: 2SC1815 NPN(VCEO=45V ICrating=150M MFG=Toshiba)
+misc/ltspice/standard.bjt:752: .model Q2SA1015 ako: 2SA1015 pnp(VCEO=45V ICrating=150M MFG=Toshiba)
+misc/ltspice/standard.bjt:763: .MODEL 2SA1360 ako: Q2SA1360 PNP
+misc/ltspice/standard.bjt:781: .model BF459 ako: BF257 NPN
+misc/ltspice/standard.bjt:848: .model 2SB688 Ako: Q2SB688 PNP
+misc/ltspice/standard.bjt:880: .model MMBT4258 ako: PN4258 pnp Vceo=12 Icrating=200m MFG=Fairchild
+misc/ltspice/standard.bjt:882: .model PN3640 ako: MMBT3640 pnp Vceo=12 Icrating=200m MFG=Fairchild
+misc/ltspice/standard.bjt:933: .MODEL PBHV9040x ako: PBHV9040T PNP Vceo=400 Icrating=0.25 mfg=NXP ; SOt89
+misc/ltspice/standard.bjt:934: .MODEL PBHV9040z ako: PBHV9040T PNP Vceo=400 Icrating=0.25 mfg=NXP ; SOt223
+misc/ltspice/standard.bjt:974: .model 2SC9018 ako: SS9018G NPN Vceo=15 Icrating=50m
+misc/ltspice/standard.dio:1: * Copyright (c) 2000-2012 Linear Technology Corporation.   All rights reserved.
+misc/ltspice/standard.dio:2: *
+misc/ltspice/standard.dio:3: 
+misc/ltspice/standard.dio:110: .model D1N4007 ako: 1N4007 d mfg=OnSemi type=silicon
+misc/ltspice/standard.mos:1: * Copyright (c) 2000-2012 Linear Technology Corporation.   All rights reserved.
+misc/ltspice/standard.mos:2: *
+misc/ltspice/standard.mos:3: 
+misc/ltspice/standard.jft:1: * Copyright (c) 2000-2012 Linear Technology Corporation.   All rights reserved.
+misc/ltspice/standard.jft:2: *
+misc/ltspice/standard.jft:3: 
+misc/ltspice/standard.jft:176: .model MPF102 NJF(Beta=1.04m Betatce=-.5 Rd=1 Rs=1 Lambda=2m

@@ -1,0 +1,4 @@
+* 8EWS12
+* diode/undefined/8ews12.mod
+
+.MODEL 8EWS12 d IS=1e-07 RS=0.0115955 N=1.9747 EG=0.6 XTI=0.5 BV=1200 IBV=0.0001 CJO=1e-11 VJ=0.7 M=0.5 FC=0.5 TT=1n

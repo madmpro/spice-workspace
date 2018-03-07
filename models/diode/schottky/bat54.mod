@@ -1,0 +1,4 @@
+* BAT54
+* diode/schottky/bat54.mod
+
+.model BAT54 D(Is=.1u Rs=2.2 N=1 Cjo=12p M=.3 Eg=.69 Xti=2 Iave=300m Vpk=30 mfg=Vishay type=Schottky)

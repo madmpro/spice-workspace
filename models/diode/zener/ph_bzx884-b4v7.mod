@@ -1,0 +1,4 @@
+* PH_BZX884-B4V7
+* diode/zener/ph_bzx884-b4v7.mod
+
+.MODEL PH_BZX884-B4V7 D ( IS=7.066E-16 N=0.9643 BV=4.7 IBV=0.005 RS=0.2544 CJO=2.589E-10 VJ=0.8029 M=0.3636 FC=0.5 mfg=Philips type=zener )
