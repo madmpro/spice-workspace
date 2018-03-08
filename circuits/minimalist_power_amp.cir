@@ -1,0 +1,59 @@
+** Minimalist Discrete Power Amplifier
+** A simple minimalistic design with pretty good performance.
+**
+** Date: 03 Mar 2018
+** Author: Nathan Campos <nathan@innoveworkshop.com>
+
+.include ../models/bjt/npn/bc550c.mod
+.include ../models/bjt/pnp/bc560c.mod
+.include ../models/bjt/npn/tip31c.mod
+.include ../models/bjt/pnp/tip32c.mod
+.include ../models/diode/silicon/1n4148.mod
+
+* Input stage.
+Cin input Qinb 10u
+Rbias bias Qinb 10k
+Qin Qinc Qinb Qvasb BC560C
+R1 Qine V+ 820
+R2 Qinc 0 18k
+Rfb Qine dcoutput 10k
+
+* VAS.
+Cpc bout- Qvasb 5pF
+Qvas bout- Qvasb 0 BC550C
+
+* dcoutput current source and bias diodes.
+Qcs1 Qcs2b Qcs2e V+ BC560C
+Rcs1 Qcs2b 0 47k
+Qcs2 bout+ Qcs2b Qcs2e BC560C
+Rcs2 Qcs2e V+ 680
+Db1 bout+ n001 1n4148
+Db2 n001 bout- 1n4148
+
+* dcoutput positive side.
+Qdr1 Qoutpb bout+ dcoutput BC550C
+Rdr1 Qoutpb V+ 680
+Qoutp dcoutput Qoutpb V+ TIP32C
+
+* dcoutput negative side.
+Qdr2 Qoutnb bout- dcoutput BC560C
+Rdr2 Qoutnb 0 680
+Qoutn dcoutput Qoutnb 0 TIP31C
+
+* dcoutput.
+Cout dcoutput output 4700uF
+Rload output 0 8
+
+* Sources.
+V1 V+ 0 dc 30V
+Vin input 0 dc 0v $ac sin(0 400mV 1k 0 0)
+Vbias bias 0 dc 28.8V
+
+**
+** Commands
+**
+*.plot tran v(input) v(dcoutput)
+*.four 1k v(dcoutput)
+.tran 1u 10m 0
+
+.end
