@@ -13,9 +13,9 @@
 * Input stage.
 Cin input Qinb 10u
 Rbias bias Qinb 10k
-Qin Qinc Qinb Qvasb BC560C
+Qin Qvasb Qinb Qine BC560C
 R1 Qine V+ 820
-R2 Qinc 0 18k
+R2 Qvasb 0 18k
 Rfb Qine dcoutput 10k
 
 * VAS.
@@ -46,8 +46,8 @@ Rload output 0 8
 
 * Sources.
 V1 V+ 0 dc 30V
-Vin input 0 dc 0v $ac sin(0 400mV 1k 0 0)
-Vbias bias 0 dc 28.8V
+Vin input 0 ac sin(0 900mV 1k 0 0)
+Vbias bias 0 dc 28.25V
 
 **
 ** Commands
