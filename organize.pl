@@ -1,4 +1,12 @@
 #!/usr/bin/perl
+
+### organize.pl
+### Grabs a model library file filled with tons of beautiful SPICE models and
+### separates them into individual models ready for importing into a SPICE engine.
+###
+### Author: Nathan Campos <nathan@innoveworkshop.com>
+### Date: 03 Mar 2018
+
 use strict;
 use warnings;
 use IO::Handle;
