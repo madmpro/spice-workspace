@@ -11,10 +11,10 @@ use strict;
 use warnings;
 use IO::Handle;
 use Term::ANSIColor;
-use Data::Dumper;
 use FindBin;
 
-my $models_dir = "$FindBin::Bin/models";  # Location of the model library.
+my $content = "";
+my $ignored_params = "";
 
 # Check the command-line arguments.
 if (scalar(@ARGV) < 1) {
@@ -27,40 +27,30 @@ if (scalar(@ARGV) < 1) {
 }
 
 my ($filename, $vendor) = @ARGV;
-my $content = "";
-my $ignored_params = "";
 
+# Open the model file and read all of its contents.
 open(my $fh, "<:encoding(UTF-8)", $filename)
 	or die "[" . colored("ERROR", "red") . "] Could not open file '$filename': $!\n";
-
-print colored("Original:\n", "bold");
-
 while (my $line = <$fh>) {
-	if ($line =~ m/^\.model/i) {
-		# TODO: This is probably better done in the content later.
-		# TODO: Ignore if this is matched when the line begins with a comment.
-		my @params = ($line =~ /(nk|vceo|icrating|mfg|iave|vpk|type)\=([A-Za-z0-9\.\-\+]*)/gmi);
-		print Dumper(\@params);
-
-		for (my $i = 0; $i < int(scalar(@params) / 2); $i++) {
-			my $key = @params[$i * 2];
-			my $value = @params[($i * 2) + 1];
-			
-			$ignored_params .= "* $key = $value\n";
-		}
-	}
-
-	print $line;
 	$content .= $line;
 }
 
+# Grab the ignored parameters in a array.
+my @params = ($content =~ /(nk|vceo|icrating|mfg|iave|vpk|type)\=([A-Za-z0-9\.\-\+]*)/gmi);
+
+# Generate the ignored parameter comments.
+for (my $i = 0; $i < int(scalar(@params) / 2); $i++) {
+	my $key = @params[$i * 2];
+	my $value = @params[($i * 2) + 1];
+	
+	$ignored_params .= "* $key: $value\n";
+}
+
 # Clean the model.
-$content =~ s/\s((nk\=([A-Za-z0-9\.\-\+]*))|(vceo\=([A-Za-z0-9\.\-\+]*))|(icrating\=([A-Za-z0-9\.\-\+]*))|(mfg\=([A-Za-z0-9\.\-\+]*))|(iave\=([A-Za-z0-9\.\-\+]*))|(vpk\=([A-Za-z0-9\.\-\+]*))|(type\=([A-Za-z0-9\.\-\+]*)))//gmi;
+$content =~ s/\s(nk|vceo|icrating|mfg|iave|vpk|type)\=([A-Za-z0-9\.\-\+]*)//gmi;
 
-print colored("New:\n", "bold");
-print "$content\n\n$ignored_params";
-
-# TODO: Make sure to make the model name is uppercase.
-# Remember that this script should only take a single model file.
-# TODO: Use simple regex substitution to remove a parameter, no need to go splitting.
+print "$content";
+if (length($ignored_params) > 0) {
+	print "\n$ignored_params";
+}
 
