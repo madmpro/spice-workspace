@@ -34,7 +34,7 @@
 +TF=380e-12 	XTF=30 		VTF=4		ITF=0.4
 +TR=240e-9	BR=0.7		IKR=0
 +EG=1.1 	XTB=1.5		XTI=3		NC=2
-+ISC=0		mfg=CA022411
++ISC=0	
 *
 *
 * 2N3906C - created February 24, 2011 copyright Cordell Audio
@@ -47,7 +47,7 @@
 +TF=550e-12 	XTF=20000 	VTF=10		ITF=3.5
 +TR=10e-9	BR=4		IKR=11		
 +EG=1.1 	XTB=1.5		XTI=3		NC=15.5
-+ISC=0.5e-15	VAR=100		NK=1.0		mfg=CA022411
++ISC=0.5e-15	VAR=100		
 *
 *
 * 2N4401C - created February 23, 2011 copyright Cordell Audio
@@ -60,7 +60,7 @@
 +TF=570e-12 	XTF=400 	VTF=10		ITF=4
 +TR=230e-9	BR=1		IKR=0
 +EG=1.1 	XTB=1.5		XTI=3		NC=2
-+ISC=0		mfg=CA022311
++ISC=0	
 *
 *
 * 2N4403C - created March 9, 2011 copyright Cordell Audio
@@ -73,7 +73,7 @@
 +TF=750e-12 	XTF=400 	VTF=10		ITF=4
 +TR=100e-9	BR=4		IKR=0		
 +EG=1.1 	XTB=1.5		XTI=3		NC=2
-+ISC=0		mfg=CA030911
++ISC=0	
 *
 *
 * 2N5087C - created March 9, 2011 copyright Cordell Audio
@@ -86,7 +86,7 @@
 +TF=540e-12 	XTF=7 		VTF=4		ITF=0.45
 +TR=10e-9	BR=2.7		IKR=0
 +EG=1.1 	XTB=1.5		XTI=3		NC=2
-+ISC=0		mfg=CA030911
++ISC=0	
 *
 *
 * 2N5089C - created March 9, 2011 copyright Cordell Audio
@@ -99,7 +99,7 @@
 +TF=850e-12 	XTF=7 		VTF=4		ITF=0.35
 +TR=500e-9	BR=1.5		IKR=0
 +EG=1.1 	XTB=1.5		XTI=3		NC=2
-+ISC=0		mfg=CA030911
++ISC=0	
 *
 *
 * 2N5210C - created March 10, 2011 copyright Cordell Audio
@@ -112,7 +112,7 @@
 +TF=850e-12 	XTF=7 		VTF=4		ITF=0.35
 +TR=500e-9	BR=1.5		IKR=0
 +EG=1.1 	XTB=1.5		XTI=3		NC=2
-+ISC=0		mfg=CA031011
++ISC=0	
 *
 *
 * 2N5401C - created March 10, 2011 copyright Cordell Audio
@@ -125,7 +125,7 @@
 +TF=800e-12 	XTF=60	 	VTF=0		ITF=4
 +TR=1.5e-9	BR=4		IKR=0		
 +EG=1.1 	XTB=1.5		XTI=3		NC=2
-+ISC=0		mfg=CA031011
++ISC=0	
 *
 *
 * 2N5551C - created March 10, 2011 copyright Cordell Audio
@@ -138,7 +138,7 @@
 +TF=565e-12 	XTF=300		VTF=5		ITF=2.0
 +TR=1.2e-9	BR=3		IKR=0
 +EG=1.1 	XTB=1.5		XTI=3		NC=2
-+ISC=0		mfg=CA031011
++ISC=0	
 *
 *
 * 2SA1381C - created March 11, 2011 copyright Cordell Audio
@@ -151,7 +151,7 @@
 +TF=900e-12 	XTF=10000 	VTF=35		ITF=20
 +TR=1e-9	BR=1.6		IKR=0.09		
 +EG=0.6 	XTB=0.9		XTI=3		NC=2
-+ISC=3.2e-10	VAR=100		mfg=CA031111
++ISC=3.2e-10	VAR=100	
 *
 *
 * 2SC3503C - created March 11, 2011 copyright Cordell Audio
@@ -165,7 +165,7 @@
 +TR=10e-9	BR=0.6		IKR=0.05
 +EG=0.75 	XTB=1.5		XTI=3		NC=1.5
 +ISC=7e-15	NR=1.0		VAR=100		IRB=3e-6
-+RBM=0.035	XCJC=1.0	mfg=CA031111
++RBM=0.035	XCJC=1.0
 *
 *
 * 2SA1407C - created April 10, 2011 copyright Cordell Audio
@@ -178,7 +178,7 @@
 +TF=320e-12 	XTF=10000 	VTF=35		ITF=20
 +TR=100e-9	BR=1.6		IKR=0.09		
 +EG=0.6 	XTB=0.9		XTI=3		NC=2
-+ISC=3e-10	VAR=100		mfg=CA041011
++ISC=3e-10	VAR=100	
 *
 *
 * 2SC3601C - created April 10, 2011 copyright Cordell Audio
@@ -192,7 +192,7 @@
 +TR=10e-9	BR=0.6		IKR=0.05
 +EG=0.75 	XTB=1.5		XTI=3		NC=1.5
 +ISC=7e-15	NR=1.0		VAR=100		IRB=3e-6
-+RBM=0.035	XCJC=1.0	mfg=CA041011
++RBM=0.035	XCJC=1.0
 *
 *
 * BC550C - created March 1, 2011 copyright Cordell Audio
@@ -207,7 +207,7 @@
 +EG=1.2 	XTB=1.65	XTI=3		NC=0.996
 +NR=1.0		VAR=120		IRB=7e-5	RBM=1.1
 +XCJC=0.6	
-+ISC=5e-15	mfg=CA030111
++ISC=5e-15
 *
 *
 * BC560C - created March 2, 2011 copyright Cordell Audio
@@ -220,7 +220,7 @@
 +TF=600e-12 	XTF=7 		VTF=4		ITF=0.45
 +TR=10e-9	BR=3		IKR=0
 +EG=1.1 	XTB=1.5		XTI=3		NC=2
-+ISC=0		mfg=CA030211
++ISC=0	
 *
 *
 * BD139C - created April 13, 2011 copyright Cordell Audio
@@ -234,7 +234,7 @@
 +TR=10e-9	BR=78		IKR=0.14
 +EG=1.21 	XTB=1.14	XTI=3		NC=1.45
 +ISC=19e-12	NR=1.0		VAR=7.5		IRB=0.03
-+RBM=0.001	XCJC=0.53	mfg=CA041311
++RBM=0.001	XCJC=0.53
 *
 *
 * BD140C - created April 13, 2011 copyright Cordell Audio
@@ -247,7 +247,7 @@
 +TF=320e-12 	XTF=10000 	VTF=35		ITF=20
 +TR=100e-9	BR=25		IKR=0.1		
 +EG=1.2 	XTB=1.5		XTI=3		NC=1.4
-+ISC=7e-12	NR=1.0		VAR=8		IRB=0.01	RBM=0.01	mfg=CA041311
++ISC=7e-12	NR=1.0		VAR=8		IRB=0.01	RBM=0.01
 *
 *
 * MJE243C - created March 11, 2011 copyright Cordell Audio
@@ -261,7 +261,7 @@
 +TR=1000e-9	BR=1.7		IKR=1.0
 +EG=1.05 	XTB=1.2		XTI=0.8		NC=2.9
 +ISC=1e-16	NR=1.04		VAR=140		IRB=5e-5
-+RBM=0.001	XCJC=0.8	mfg=CA031111
++RBM=0.001	XCJC=0.8
 *
 *
 * MJE253C - created April 16, 2011 copyright Cordell Audio
@@ -275,7 +275,7 @@
 +TR=1000e-9	BR=4		IKR=4.4
 +EG=1.05 	XTB=1.3		XTI=0.01	NC=2.9
 +ISC=6e-13	NR=1.15		VAR=50		IRB=7e-6
-+RBM=0.001	XCJC=0.8	mfg=CA041611
++RBM=0.001	XCJC=0.8
 *
 *
 * MJE340C - created March 7, 2011 copyright Cordell Audio
@@ -289,7 +289,7 @@
 +TR=10000e-12	BR=0.004	IKR=0.05
 +EG=0.64 					NC=2
 +ISC=1.5e-10	VAR=100		
-+				mfg=CA030711
++			
 *
 *
 * MJE350C - created March 7, 2011 copyright Cordell Audio
@@ -303,7 +303,7 @@
 +BR=0.04	IKR=0.0075
 +EG=0.75 	XTB=1.1		XTI=3		NC=2.0
 +ISC=5e-12	VAR=100		
-+				mfg=CA030711
++			
 *
 * MJE15032C - created March 29, 2011 copyright Cordell Audio
 .MODEL MJE15032C npn
@@ -316,7 +316,7 @@
 +	TR=100e-9	BR=6 		VAR=15	 	NR=1.5
 +	EG=1.2 		XCJC=0.8	XTB=0.7		XTI=1.05	
 +	NC=4		ISC=0.4e-12	
-+	IKR=5.2		mfg=CA032911 
++	IKR=5.2	 
 *
 *
 * MJE15033C - created April 16, 2011 copyright Cordell Audio
@@ -330,7 +330,7 @@
 +	TR=100e-9	BR=5 		VAR=15	 	NR=1.5
 +	EG=1.05		XCJC=0.8	XTB=0.22	XTI=1.0	
 +	NC=4		ISC=0.3e-12	
-+	IKR=7.5		mfg=CA041611 
++	IKR=7.5	 
 *
 *
 * MJL21193C - created November 22, 2010 copyright Cordell Audio
@@ -343,7 +343,7 @@
 +	TF=24e-9 	XTF=1.0 	VTF=10		ITF=10
 +	TR=100e-9	BR=5 		VAR=100 	NR=1.1
 +	EG=1.1 		XCJC=0.96	XTB=0.1		XTI=1.0	
-+	NC=4		ISC=0.3e-12	mfg=CA112210 
++	NC=4		ISC=0.3e-12 
 *
 *
 * MJL21194C - created November 22, 2010 copyright Cordell Audio
@@ -356,7 +356,7 @@
 +	TF=21e-9 	XTF=90 		VTF=10		ITF=100
 +	TR=100e-9	BR=5 		VAR=100 	NR=1.1
 +	EG=1.1 		XCJC=0.96	XTB=0.1		XTI=1.0	
-+	NC=4		ISC=0.3e-12	mfg=CA112210 
++	NC=4		ISC=0.3e-12 
 *
 *
 * MJL1302C - created April 16, 2011 copyright Cordell Audio
@@ -371,8 +371,8 @@
 +	EG=1.1 		XCJC=1.0	XTB=0.1		XTI=1.0	
 +	NC=4		ISC=0.3e-12	
 +	IKR=4.5		CJS=0		VJS=0.75	MJS=0.5
-+	PTF=0		KF=0		AF=1		Vceo=200
-+	Icrating=15	mfg=CA041611 
++	PTF=0		KF=0		AF=1	
++ 
 *
 *
 * MJL3281C - created April 16, 2011 copyright CordellAudio
@@ -387,8 +387,8 @@
 +	EG=1.1 		XCJC=1.0	XTB=0.12	XTI=1.0	
 +	NC=4		ISC=0.3e-12	
 +	IKR=4.4		CJS=0		VJS=0.75	MJS=0.5
-+	PTF=0		KF=0		AF=1		Vceo=200
-+	Icrating=15	mfg=CA041611 
++	PTF=0		KF=0		AF=1	
++ 
 *
 *
 * MJL4281C - created April 16, 2011 copyright CordellAudio
@@ -403,8 +403,8 @@
 +	EG=1.1 		XCJC=1.0	XTB=0.12	XTI=1.0	
 +	NC=4		ISC=0.3e-12	
 +	IKR=4.4		CJS=0		VJS=0.75	MJS=0.5
-+	PTF=0		KF=0		AF=1		Vceo=200
-+	Icrating=15	mfg=CA041611 
++	PTF=0		KF=0		AF=1	
++ 
 *
 *
 * MJL4302C - created April 16, 2011 copyright Cordell Audio
@@ -419,8 +419,8 @@
 +	EG=1.1 		XCJC=1.0	XTB=0.12	XTI=1.0	
 +	NC=4		ISC=0.3e-12	
 +	IKR=4.4		CJS=0		VJS=0.75	MJS=0.5
-+	PTF=0		KF=0		AF=1		Vceo=200
-+	Icrating=15	mfg=CA041611 
++	PTF=0		KF=0		AF=1	
++ 
 *
 *
 * NJL1302C - created November 22, 2010 copyright Cordell Audio
@@ -435,8 +435,8 @@
 +	EG=1.1 		XCJC=0.96	XTB=0.12	XTI=1.03	
 +	NC=4		ISC=0.3e-12	
 +	IKR=4.4		CJS=0		VJS=0.75	MJS=0.5
-+	PTF=0		KF=0		AF=1		Vceo=200
-+	Icrating=15	mfg=CA112210 
++	PTF=0		KF=0		AF=1	
++ 
 *
 *
 * NJL3281C - created November 22, 2010 copyright CordellAudio
@@ -451,8 +451,8 @@
 +	EG=1.1 		XCJC=0.96	XTB=0.12	XTI=1.03	
 +	NC=4		ISC=0.3e-12	
 +	IKR=4.4		CJS=0		VJS=0.75	MJS=0.5
-+	PTF=0		KF=0		AF=1		Vceo=200
-+	Icrating=15	mfg=CA112210 
++	PTF=0		KF=0		AF=1	
++ 
 *
 *
 *
@@ -530,29 +530,29 @@
 *
 * 1N4004C - copyright Cordell Audio November 23, 2010
 .model 1N4004C D  (IS=500p RS=0.12 BV=400 IBV=5.00u
-+ CJO=40p  M=0.35 N=1.6 TT=4u mfg=CA112310)
++ CJO=40p  M=0.35 N=1.6 TT=4u)
 *
 *
 * 1N4148C - copyright Cordell Audio November 23, 2010
-.model 1N4148C D(Is=5n Rs=1.0 N=1.9 Cjo=4p M=.4 tt=20n Iave=200m Vpk=75 mfg=CA112410)
+.model 1N4148C D(Is=5n Rs=1.0 N=1.9 Cjo=4p M=.4 tt=20n)
 *
 *
 * BRIDGE35A	(Diodes, Inc. GBPC3502 200V) - copyright Cordell Audio November 23, 2010
 * created November 23, 2010 copyright Cordell Audio
-.model BRIDGE35A D(Is=20000n Rs=.006 N=2.4 EG=1.3 XTI=.5 BV=200 IBV=1e-05 Cjo=500p Vj=1.3 M=.45 tt=4u Iave=4 Vpk=200 mfg=CA112310)
+.model BRIDGE35A D(Is=20000n Rs=.006 N=2.4 EG=1.3 XTI=.5 BV=200 IBV=1e-05 Cjo=500p Vj=1.3 M=.45 tt=4u)
 *
 *
 * GBPC3502C	(Diodes, Inc. GBPC3502 200V) - copyright Cordell Audio November 23, 2010
 * created November 23, 2010 copyright Cordell Audio
-.model GBPC3502C D(Is=20000n Rs=.006 N=2.4 EG=1.3 XTI=.5 BV=200 IBV=1e-05 Cjo=500p Vj=1.3 M=.45 tt=4u Iave=4 Vpk=200 mfg=CA112310)
+.model GBPC3502C D(Is=20000n Rs=.006 N=2.4 EG=1.3 XTI=.5 BV=200 IBV=1e-05 Cjo=500p Vj=1.3 M=.45 tt=4u)
 *
 *
 * HFA25PB60C Ultrafast HEXFRED rectifier Trr ~ 25-35ns - copyright Cordell Audio December 6, 2010
-.model HFA25PB60C D(Is=140e-4 Rs=.005 N=8 Cjo=1200p M=.6 tt=35n Iave=1 Vpk=200 mfg=CA112410)
+.model HFA25PB60C D(Is=140e-4 Rs=.005 N=8 Cjo=1200p M=.6 tt=35n)
 *
 *
 * DIRFP240 IRFP240 Body Diode - copyright Cordell Audio November 23, 2010
-.model DIRFP240 D(Is=5n Rs=.01 N=1.4 Cjo=1700p M=.6 tt=45n Iave=1 Vpk=200 mfg=CA112410)
+.model DIRFP240 D(Is=5n Rs=.01 N=1.4 Cjo=1700p M=.6 tt=45n)
 *
 *
 * DTTD  ThemrmalTrak transistor tracking diode - copyright Cordell Audio November 23, 2010
@@ -562,12 +562,12 @@
 *
 * SCHOTTKY Small-signal Schottky Diode	NXP BAT85	200mA/30V
 * created November 23, 2010 copyright Cordell Audio
-.model SCHOTTKY D(Is=.2u Rs=2.2 N=1 Cjo=7p M=.3 Eg=.7 Xti=2 Iave=200m Vpk=30 mfg=CA112310 type=Schottky)
+.model SCHOTTKY D(Is=.2u Rs=2.2 N=1 Cjo=7p M=.3 Eg=.7 Xti=2)
 *
 *
 * BAT85C Small-signal Schottky Diode	NXP BAT85	200mA/30V
 * created November 23, 2010 copyright Cordell Audio
-.model BAT85C D(Is=.2u Rs=2.2 N=1 Cjo=7p M=.3 Eg=.7 Xti=2 Iave=200m Vpk=30 mfg=CA112310 type=Schottky)
+.model BAT85C D(Is=.2u Rs=2.2 N=1 Cjo=7p M=.3 Eg=.7 Xti=2)
 
 *
 * 	Zener Diodes
@@ -581,52 +581,52 @@
 *
 * Z4_7 4.7V Zener Diode		(Diodes Inc. 1N5230B)
 * created November 23, 2010 copyright Cordell Audio
-.model Z4_7 D(Is=1.5n Rs=.5 Cjo=190p nbv=13 bv=4.7 Ibv=10m Vpk=6.2 mfg=CA112310 type=zener6_2V)
+.model Z4_7 D(Is=1.5n Rs=.5 Cjo=190p nbv=13 bv=4.7 Ibv=10m_2V)
 *
 *
 * 1N5230BC 4.7V Zener Diode		(Diodes Inc. 1N5230B)
 * created November 23, 2010 copyright Cordell Audio
-.model 1N5230BC D(Is=1.5n Rs=.5 Cjo=190p nbv=13 bv=4.7 Ibv=10m Vpk=6.2 mfg=CA112310 type=zener6_2V)
+.model 1N5230BC D(Is=1.5n Rs=.5 Cjo=190p nbv=13 bv=4.7 Ibv=10m_2V)
 *
 *
 * Z6_2 6.2V Zener Diode		(Diodes Inc. 1N5234B)
 * created November 24, 2010 copyright Cordell Audio
-.model Z6_2 D(Is=1.5n Rs=.5 Cjo=190p nbv=12 bv=6.2 Ibv=10m Vpk=6.2 mfg=CA112410)
+.model Z6_2 D(Is=1.5n Rs=.5 Cjo=190p nbv=12 bv=6.2 Ibv=10m)
 *
 *
 * 1N5234BC 6.2V Zener Diode		(Diodes Inc. 1N5234B)
 * created November 24, 2010 copyright Cordell Audio
-.model 1N5234BC D(Is=1.5n Rs=.5 Cjo=190p nbv=12 bv=6.2 Ibv=10m Vpk=6.2 mfg=CA112410)
+.model 1N5234BC D(Is=1.5n Rs=.5 Cjo=190p nbv=12 bv=6.2 Ibv=10m)
 *
 *
 * Z8_2 8.2V Zener Diode		Diodes Inc. 1N5237B
 * created January 21, 2011 copyright Cordell Audio
-.model Z8_2 D(Is=1.5n Rs=.5 Cjo=185p nbv=12 bv=8.2 Ibv=10m Vpk=8.2 mfg=CA012111)
+.model Z8_2 D(Is=1.5n Rs=.5 Cjo=185p nbv=12 bv=8.2 Ibv=10m)
 *
 *
 * 1N5237B 8.2V Zener Diode		Diodes Inc. 1N5237B
 * created January 21, 2011 copyright Cordell Audio
-.model Z8_2 D(Is=1.5n Rs=.5 Cjo=185p nbv=12 bv=8.2 Ibv=10m Vpk=8.2 mfg=CA012111)
+.model Z8_2 D(Is=1.5n Rs=.5 Cjo=185p nbv=12 bv=8.2 Ibv=10m)
 *
 *
 * Z12 12V Zener Diode		(Diodes Inc. 1N5242B)
 * created November 24, 2010 copyright Cordell Audio
-.model Z12 D(Is=.6u Rs=.5 Cjo=150p nbv=6.4 bv=12 Ibv=20m Vpk=12 mfg=CA112410)
+.model Z12 D(Is=.6u Rs=.5 Cjo=150p nbv=6.4 bv=12 Ibv=20m)
 *
 * 
 * 1N5242BC 12V Zener Diode		(Diodes Inc. 1N5242B)
 * created November 24, 2010 copyright Cordell Audio
-.model 1N5242BC D(Is=.6u Rs=.5 Cjo=150p nbv=6.4 bv=12 Ibv=20m Vpk=12 mfg=CA112410)
+.model 1N5242BC D(Is=.6u Rs=.5 Cjo=150p nbv=6.4 bv=12 Ibv=20m)
 *
 *
 * Z15 15V Zener Diode		(Diodes Inc. 1N5245B)
 * created November 24, 2010 copyright Cordell Audio
-.model Z15 D(Is=.6u Rs=.5 Cjo=110p nbv=8.5 bv=15 Ibv=5m Vpk=15 mfg=CA112410)
+.model Z15 D(Is=.6u Rs=.5 Cjo=110p nbv=8.5 bv=15 Ibv=5m)
 *
 *
 * 1N5245BC 15V Zener Diode		(Diodes Inc. 1N5245B)
 * created November 24, 2010 copyright Cordell Audio
-.model 1N5245BC D(Is=.6u Rs=.5 Cjo=110p nbv=8.5 bv=15 Ibv=5m Vpk=15 mfg=CA112410)
+.model 1N5245BC D(Is=.6u Rs=.5 Cjo=110p nbv=8.5 bv=15 Ibv=5m)
 *
 *
 * 	LEDs
@@ -653,3 +653,94 @@
 *
 
 
+
+* mfg: CA022411
+* NK: 1.0
+* mfg: CA022411
+* mfg: CA022311
+* mfg: CA030911
+* mfg: CA030911
+* mfg: CA030911
+* mfg: CA031011
+* mfg: CA031011
+* mfg: CA031011
+* mfg: CA031111
+* mfg: CA031111
+* mfg: CA041011
+* mfg: CA041011
+* mfg: CA030111
+* mfg: CA030211
+* mfg: CA041311
+* mfg: CA041311
+* mfg: CA031111
+* mfg: CA041611
+* mfg: CA030711
+* mfg: CA030711
+* mfg: CA032911
+* mfg: CA041611
+* mfg: CA112210
+* mfg: CA112210
+* Vceo: 200
+* Icrating: 15
+* mfg: CA041611
+* Vceo: 200
+* Icrating: 15
+* mfg: CA041611
+* Vceo: 200
+* Icrating: 15
+* mfg: CA041611
+* Vceo: 200
+* Icrating: 15
+* mfg: CA041611
+* Vceo: 200
+* Icrating: 15
+* mfg: CA112210
+* Vceo: 200
+* Icrating: 15
+* mfg: CA112210
+* mfg: CA112310
+* Iave: 200m
+* Vpk: 75
+* mfg: CA112410
+* Iave: 4
+* Vpk: 200
+* mfg: CA112310
+* Iave: 4
+* Vpk: 200
+* mfg: CA112310
+* Iave: 1
+* Vpk: 200
+* mfg: CA112410
+* Iave: 1
+* Vpk: 200
+* mfg: CA112410
+* Iave: 200m
+* Vpk: 30
+* mfg: CA112310
+* type: Schottky
+* Iave: 200m
+* Vpk: 30
+* mfg: CA112310
+* type: Schottky
+* Vpk: 6.2
+* mfg: CA112310
+* type: zener6
+* Vpk: 6.2
+* mfg: CA112310
+* type: zener6
+* Vpk: 6.2
+* mfg: CA112410
+* Vpk: 6.2
+* mfg: CA112410
+* Vpk: 8.2
+* mfg: CA012111
+* Vpk: 8.2
+* mfg: CA012111
+* Vpk: 12
+* mfg: CA112410
+* Vpk: 12
+* mfg: CA112410
+* Vpk: 15
+* mfg: CA112410
+* Vpk: 15
+* mfg: CA112410
