@@ -29,9 +29,11 @@ if (scalar(@ARGV) < 1) {
 my ($filename, $vendor) = @ARGV;
 
 # Open the model file and read all of its contents, then seek it all back for writing.
+print "[" . colored("OPEN", "bright_blue") . "] Opening model: $filename\n";
 open(my $fh, "<:encoding(UTF-8)", $filename)
 	or die "[" . colored("ERROR", "red") . "] Could not open file '$filename': $!\n";
 
+print "[" . colored("READ", "bright_yellow") . "] Reading contents of the model file.\n";
 while (my $line = <$fh>) {
 	$content .= $line;
 }
@@ -50,8 +52,11 @@ for (my $i = 0; $i < int(scalar(@params) / 2); $i++) {
 }
 
 # Clean the model.
+print "[" . colored("CLEAN", "bright_yellow") . "] Cleaning the model.\n";
 $content =~ s/\s(nk|vceo|icrating|mfg|iave|vpk|type)\=([A-Za-z0-9\.\-\+]*)//gmi;
 
+# Write the new model file.
+print "[" . colored("WRITE", "bright_yellow") . "] Writing the new contents of the model file.\n";
 open($fh, ">:encoding(UTF-8)", "$FindBin::Bin/$filename")
 	or die "[" . colored("ERROR", "red") . "] Could not open file '$filename': $!\n";
 
@@ -59,4 +64,7 @@ print $fh "$content";
 if (length($ignored_params) > 0) {
 	print $fh "\n$ignored_params";
 }
+
+close($fh);
+print "[" . colored("OK", "green") . "] Wrote clean model to $filename\n";
 
