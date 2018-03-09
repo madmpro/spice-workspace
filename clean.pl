@@ -11,7 +11,6 @@ use strict;
 use warnings;
 use IO::Handle;
 use Term::ANSIColor;
-use FindBin;
 
 my $content = "";
 my $ignored_params = "";
@@ -57,7 +56,7 @@ $content =~ s/\s(nk|vceo|icrating|mfg|iave|vpk|type)\=([A-Za-z0-9\.\-\+]*)//gmi;
 
 # Write the new model file.
 print "[" . colored("WRITE", "bright_yellow") . "] Writing the new contents of the model file.\n";
-open($fh, ">:encoding(UTF-8)", "$FindBin::Bin/$filename")
+open($fh, ">:encoding(UTF-8)", $filename)
 	or die "[" . colored("ERROR", "red") . "] Could not open file '$filename': $!\n";
 
 print $fh "$content";
