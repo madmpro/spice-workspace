@@ -1,0 +1,65 @@
+*-----------------------------------------------------------------------
+* Filename:		dm6L6.inc  V2  5/9/97
+* Simulator:		Spice 3f4
+* Device type:		Power beam tetrode
+* Device model:		6L6 (and variants)
+*
+* Author:		Duncan Munro
+* Date:			3/9/97
+* Copyright:		(C)1997-2000 Duncan Amplification
+* 
+* The following parameters are not modelled:
+*
+*   (1) Heater
+*   (2) Grid current is an approximation
+*
+* Please note that this model is provided "as is" and
+* no warranty is provided in respect of its suitability
+* for any application.
+*
+* This model is provided for educational and non-profit use.
+*
+* Email queries to postmaster@duncanamps.com
+*
+* Pins   A  Anode
+*        S  Screen
+*        G  Grid
+*        K  Cathode
+*
+*-----------------------------------------------------------------------
+
+.SUBCKT 6L6 A S G K
+*
+* Calculate contribution to cathode current
+*
+Bat	at  0	V=0.636*ATAN(V(A,K)/5)
+Bme	me  0	V=(URAMP(V(A,K))^1.5)/1750
+Bmup	mup 0	V=1-(URAMP(V(K,G)-30)/2000)
+Bmu	mu  0	V=V(G,K)*V(mup)
+Bgs	gs  0	V=URAMP(URAMP(V(A,K)/2.5)+V(S,K)*15.15+V(mu)*134)
+Bgs2	gs2 0	V=(V(gs)^1.5)*0.8E-6
+Bsd	sd  0	V=URAMP(V(gs2)*V(at)-V(me))
+Bcath	cc  0	V=V(gs2)*V(at)-V(sd)
+*
+* Calculate anode current
+*
+Ba	A   K	I=V(cc)
+*
+* Calculate screen current
+*
+Bscrn	sc  0	V=0.76*V(gs2)*(1.1-V(at))
+Bs	S   K	I=V(sc)
+*
+* Grid current
+*
+Bg	G   K	I=(URAMP(V(G,K)+1)^1.5)*(1.25-V(at))*650E-6
+*
+* Capacitances
+*
+Cg1	G   K	5.0p
+Cgs	G   S	5.0p
+Cak	A   K	6.5p
+Cg1a	G   A	0.6p
+
+.ENDS 
+

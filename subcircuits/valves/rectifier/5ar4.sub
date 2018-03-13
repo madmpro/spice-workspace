@@ -1,0 +1,10 @@
+**********
+.subckt GZ34_5AR4 A K
+*
+*(c) Kevin Aylward 2002 all rights reserved
+*This model may be freely distributed and used provided this notice is included
+*www.anasoft.co.uk kevin@anasoft.co.uk
+*3/2 power law, formulated as v*sqrt(v) for convergence
+b1 A K i=3.1e-4*uramp(V(A,K)) * sqrt(V(A,K))
+.ends
+************
